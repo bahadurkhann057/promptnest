@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptNest — Free AI Prompt Generator for Image & Chat Prompts</title>
+  <meta name="description" content="Generate ready-to-use AI prompts for image tools like Midjourney and DALL-E, or chat tools like ChatGPT and Claude. Free, fast, no sign-up required.">
+  <meta name="keywords" content="ai prompt generator, midjourney prompts, chatgpt prompts, image prompt generator, chat prompt generator, free prompt generator">
+  <link rel="canonical" href="https://promptnest.example.com/">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:title" content="PromptNest — Free AI Prompt Generator">
+  <meta property="og:description" content="Generate ready-to-use AI prompts for image and chat tools in seconds. Free, fast, no sign-up.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://promptnest.example.com/">
+  <meta property="og:image" content="https://promptnest.example.com/assets/images/og-image.png">
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PromptNest — Free AI Prompt Generator">
+  <meta name="twitter:description" content="Generate ready-to-use AI prompts for image and chat tools in seconds. Free, fast, no sign-up.">
+  <meta name="twitter:image" content="https://promptnest.example.com/assets/images/og-image.png">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+   <!-- Structured Data: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PromptNest",
+  "url": "https://promptnest.example.com/",
+  "description": "Free AI prompt generator for image tools like Midjourney and DALL-E, and chat tools like ChatGPT and Claude.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<!-- Structured Data: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is PromptNest really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. There's no sign-up, no paywall, and no limit on how many prompts you can generate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which AI tools can I use these prompts with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Image prompts work well with Midjourney, DALL-E, Stable Diffusion, and similar tools. Chat prompts work with ChatGPT, Claude, Gemini, and other chat-based assistants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No account is required. Just open the page and start generating."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I edit the generated prompt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — treat every generated prompt as a starting point. Feel free to tweak wording, add details, or combine ideas from a few generations."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">🪺</span>
+        <span class="logo-text">PromptNest</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#generator">Generator</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#examples">Examples</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO + TOOL ============ -->
+  <main>
+    <section class="hero" id="generator">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Free &middot; No sign-up &middot; Unlimited</p>
+        <h1>Hatch the perfect AI prompt in seconds.</h1>
+        <p class="hero-sub">Pick a mode, describe your idea, and PromptNest builds a detailed, ready-to-paste prompt for image generators or chat assistants.</p>
+
+        <div class="tool-card" id="tool-card">
+          <div class="mode-tabs" role="tablist" aria-label="Prompt type">
+            <button type="button" class="mode-tab is-active" data-mode="image" role="tab" aria-selected="true">
+              🖼️ Image Prompt
+            </button>
+            <button type="button" class="mode-tab" data-mode="chat" role="tab" aria-selected="false">
+              💬 Chat Prompt
+            </button>
+          </div>
+
+          <div class="tool-body">
+            <label class="field-label" for="subject-input">What's your idea?</label>
+            <input type="text" id="subject-input" class="text-input" placeholder="e.g. a lighthouse at sunset, a productivity app, a fantasy warrior">
+
+            <div class="field-row">
+              <div class="field-col">
+                <label class="field-label" for="style-select">Style</label>
+                <select id="style-select" class="select-input"></select>
+              </div>
+              <div class="field-col">
+                <label class="field-label" for="tone-select">Detail level</label>
+                <select id="tone-select" class="select-input"></select>
+              </div>
+            </div>
+
+            <button type="button" id="generate-btn" class="btn-generate">
+              Generate Prompt
+            </button>
+
+            <div id="output-wrap" class="output-wrap is-hidden">
+              <div class="output-card" id="output-card">
+                <p id="output-text"></p>
+              </div>
+              <button type="button" id="copy-btn" class="btn-copy">Copy prompt</button>
+              <span id="copy-confirm" class="copy-confirm is-hidden">Copied!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how-it-works">
+      <div class="wrap">
+        <h2>How PromptNest works</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <h3>Choose a mode</h3>
+            <p>Switch between Image Prompt mode for tools like Midjourney, DALL-E, and Stable Diffusion, or Chat Prompt mode for tools like ChatGPT and Claude.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <h3>Describe your idea</h3>
+            <p>Type a short subject, pick a style and detail level, and let the generator do the heavy lifting of structuring it properly.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <h3>Copy and use</h3>
+            <p>Your finished prompt is ready to paste directly into your favorite AI tool. Generate as many variations as you like, for free.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY / VALUE SECTION ============ -->
+    <section class="section section-alt" id="examples">
+      <div class="wrap">
+        <h2>Why a good prompt matters</h2>
+        <p class="section-intro">The difference between a flat AI result and a striking one usually comes down to the prompt. Vague input gives vague output — specific, well-structured prompts give AI models the context they need to produce something genuinely useful.</p>
+        <div class="example-grid">
+          <div class="example-card">
+            <h3>Image prompts</h3>
+            <p class="example-label">Weak:</p>
+            <p class="example-text weak">"a cat"</p>
+            <p class="example-label">PromptNest:</p>
+            <p class="example-text strong">"A close-up studio portrait of a Siamese cat, dramatic side lighting, shallow depth of field, hyper-detailed fur texture, cinematic mood"</p>
+          </div>
+          <div class="example-card">
+            <h3>Chat prompts</h3>
+            <p class="example-label">Weak:</p>
+            <p class="example-text weak">"write a business plan"</p>
+            <p class="example-label">PromptNest:</p>
+            <p class="example-text strong">"Act as a startup consultant. Write a one-page business plan for a mobile coffee cart, including target customers, startup costs, and a 6-month revenue goal."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ (also feeds structured data) ============ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Is PromptNest really free?</summary>
+            <p>Yes. There's no sign-up, no paywall, and no limit on how many prompts you can generate.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Which AI tools can I use these prompts with?</summary>
+            <p>Image prompts work well with Midjourney, DALL-E, Stable Diffusion, and similar tools. Chat prompts work with ChatGPT, Claude, Gemini, and other chat-based assistants.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need an account?</summary>
+            <p>No account is required. Just open the page and start generating.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I edit the generated prompt?</summary>
+            <p>Yes — treat every generated prompt as a starting point. Feel free to tweak wording, add details, or combine ideas from a few generations.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year"></span> PromptNest. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

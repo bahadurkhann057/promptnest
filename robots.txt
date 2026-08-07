@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://promptnest.example.com/sitemap.xml
+Sitemap: https://promptnest-rho.vercel.app/sitemap.xml

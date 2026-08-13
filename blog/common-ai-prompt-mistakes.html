@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Mistakes People Make When Writing AI Prompts — PromptNest</title>
+  <meta name="description" content="The most common AI prompt mistakes and how to fix them, covering both image generation and chat prompts.">
+  <link rel="canonical" href="https://promptnest-rho.vercel.app/blog/common-ai-prompt-mistakes.html">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">🪺</span>
+        <span class="logo-text">PromptNest</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#generator">Generator</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap legal-content">
+        <p><a href="../blog.html">&larr; Back to Blog</a></p>
+        <h1>Common Mistakes People Make When Writing AI Prompts</h1>
+        <p><em>Published August 2026</em></p>
+
+        <p>Most disappointing AI results trace back to a handful of repeatable prompt mistakes. Here are the ones that come up most often, and how to fix each one.</p>
+
+        <h2>1. Being too vague</h2>
+        <p>"A landscape" or "help me write something" gives the model almost nothing to work with, so it defaults to the most generic interpretation possible. Add a subject, a style or tone, and ideally a purpose.</p>
+
+        <h2>2. Cramming contradictory ideas into one prompt</h2>
+        <p>Asking for "minimalist and highly detailed" or "brief but comprehensive" sends mixed signals. Pick one direction per prompt — you can always generate a second version taking the other approach.</p>
+
+        <h2>3. Forgetting to specify format</h2>
+        <p>For chat prompts especially, not stating whether you want a list, a table, a short paragraph, or a long explanation means the model has to guess — and it often guesses wrong for what you actually needed.</p>
+
+        <h2>4. Writing a full sentence when a phrase list would work better</h2>
+        <p>This applies mainly to image prompts. Tools like Midjourney parse comma-separated descriptive phrases more effectively than grammatically complete sentences — "a cat, sitting on a windowsill, soft morning light" tends to outperform "There is a cat that is sitting on a windowsill in the soft morning light."</p>
+
+        <h2>5. Giving up after one bad result</h2>
+        <p>A weak first output usually isn't a dead end — it's information. Look at what went wrong, adjust one or two specific elements, and try again rather than abandoning the idea entirely.</p>
+
+        <h2>6. Not giving the AI a role for chat tasks</h2>
+        <p>Skipping a role instruction ("Act as a...") means the model answers in a generic, average tone instead of the specific expertise or voice that would actually suit your task.</p>
+
+        <h2>7. Overloading a single prompt with too many tasks</h2>
+        <p>Asking for a blog post, an SEO title, a meta description, and social captions all in one prompt usually produces a mediocre version of everything. Breaking it into separate, focused prompts gets better results per task.</p>
+
+        <h2>8. Ignoring length control</h2>
+        <p>Not specifying roughly how long you want a response means you might get three sentences when you wanted a full page, or vice versa. A simple word or sentence count instruction fixes this immediately.</p>
+
+        <p>Avoiding these mistakes is mostly about being specific rather than assuming the AI will infer what you meant. If you'd rather skip the trial and error altogether, <a href="../index.html#generator">try the PromptNest generator</a> — it structures your idea into a properly detailed prompt automatically. New to prompts entirely? Start with our <a href="what-is-an-ai-prompt-beginners-guide.html">beginner's guide</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year"></span> PromptNest. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Use</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

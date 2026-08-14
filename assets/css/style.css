@@ -541,3 +541,60 @@ img {
     text-align: center;
   }
 }
+/* ===========================================================
+   Blog / long-form content: colorful accents
+=========================================================== */
+
+/* Colored H2 headings with a small accent bar - alternates teal/berry for rhythm */
+.legal-content h2 {
+  position: relative;
+  padding-left: 18px;
+  color: var(--teal);
+}
+
+.legal-content h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  bottom: 0.15em;
+  width: 5px;
+  border-radius: 3px;
+  background: var(--gold);
+}
+
+/* Highlighted example/callout box - reuses the dashed-nest motif from the tool card */
+.callout-box {
+  background: var(--bg-alt);
+  border: 1px dashed var(--gold);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+
+.callout-box p {
+  margin: 0;
+  color: var(--ink);
+}
+
+.callout-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--berry);
+  margin-bottom: 6px;
+}
+
+/* Pull-quote for a standout sentence mid-article */
+.pull-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--teal);
+  border-left: 4px solid var(--berry);
+  padding: 8px 0 8px 20px;
+  margin: 28px 0;
+  line-height: 1.4;
+}

@@ -345,7 +345,11 @@ img {
   text-align: center;
   margin-bottom: 40px;
 }
-
+/* Long-form content (blog posts, privacy, terms, about) reads better left-aligned */
+.legal-content h1,
+.legal-content h2 {
+  text-align: left;
+}
 /* How it works — 3 steps */
 .steps {
   display: grid;

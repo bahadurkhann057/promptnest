@@ -638,3 +638,20 @@ img {
 .author-title {
   color: var(--ink-soft);
 }
+/* ===========================================================
+   Related Posts (end of blog articles)
+=========================================================== */
+.related-posts {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.related-posts h2 {
+  font-size: 1.3rem;
+  padding-left: 0;
+}
+
+.related-posts h2::before {
+  display: none;
+}

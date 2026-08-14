@@ -33,41 +33,68 @@
       <div class="wrap legal-content">
         <p><a href="../blog.html">&larr; Back to Blog</a></p>
         <h1>10 Tips for Writing Better ChatGPT Prompts</h1>
-        <p><em>Published August 2026</em></p>
+        <div class="author-byline">
+          <div class="author-avatar">P</div>
+          <div class="author-info">
+            <p class="author-name">PromptNest Team</p>
+            <p class="author-title">Published August 2026</p>
+          </div>
+        </div>
 
-        <p>ChatGPT and similar chat assistants respond to structure, not just wording. A short, vague request forces the model to guess what you actually want. These tips help you guess less and get more of what you need on the first try.</p>
+        <p>I used to treat ChatGPT like a search bar, type a short question, get an answer, move on. It works fine for simple stuff, but the moment I started actually structuring my prompts instead of just typing whatever came to mind first, the quality gap became obvious. These aren't clever tricks, they're mostly just being more deliberate about what you're actually asking for instead of leaving it to guesswork.</p>
 
         <h2>1. Give it a role</h2>
-        <p>Starting with "Act as a..." or "You are a..." primes the model to answer with the tone, vocabulary, and priorities of that role — a marketing consultant answers differently than a strict editor.</p>
+        <p>Starting with "Act as a..." or "You are a..." primes the model to answer with the tone, vocabulary, and priorities of that specific role, rather than defaulting to a generic, one-size-fits-all voice. A marketing consultant answers differently than a strict copy editor, and a role instruction is the fastest way to steer which one you're getting. It costs one sentence and noticeably changes the character of the response.</p>
 
         <h2>2. State the task clearly, separate from context</h2>
-        <p>Put background information first, then clearly state what you actually want done. Mixing them together makes it easy for the model to miss the actual ask.</p>
+        <p>Put background information first, then clearly and separately state what you actually want done. When context and the actual ask get mixed together in one run-on request, it's surprisingly easy for the model to latch onto the context and half-miss the real task buried inside it. Separating the two, even just with a line break, makes it much harder for your actual request to get lost.</p>
+
+        <div class="callout-box">
+          <p class="callout-label">Example structure</p>
+          <p>"Context: I'm writing a resignation letter for a job I've had for 3 years, leaving on good terms. Task: draft a short, professional resignation letter, two paragraphs max."</p>
+        </div>
 
         <h2>3. Specify the format you want back</h2>
-        <p>If you want a table, a numbered list, or a short paragraph, say so directly. Without a format instruction, the model defaults to whatever seems generically appropriate.</p>
+        <p>If you want a table, a numbered list, or a short paragraph, just say so directly instead of hoping the model guesses correctly. Without a format instruction, it defaults to whatever seems generically appropriate for the topic, which is frequently not what you actually needed for your specific use case. This is one of the easiest fixes on this whole list and one of the most commonly skipped.</p>
 
         <h2>4. Set a length</h2>
-        <p>"Keep it under 100 words" or "write a detailed, in-depth answer" changes the output dramatically. Don't leave length to guesswork if it matters to you.</p>
+        <p>"Keep it under 100 words" versus "write a detailed, in-depth answer" changes the output dramatically, not just in length but often in depth and tone too. Don't leave length to guesswork if it actually matters to you, a response that's three times longer than you wanted is just as much a miss as one that's too short.</p>
 
         <h2>5. Give an example when the task is unusual</h2>
-        <p>For tasks that are hard to describe in words alone — a specific tone, a particular format — showing one example output is often more effective than a longer explanation.</p>
+        <p>For tasks that are genuinely hard to describe in words alone, a specific tone, an unusual format, a particular structure, showing one example of the output you want is often far more effective than a longer written explanation trying to capture the same thing. One well-chosen example can do the work of several paragraphs of instructions.</p>
+
+        <blockquote class="pull-quote">Showing beats explaining when the format is unusual.</blockquote>
 
         <h2>6. Ask for reasoning on complex questions</h2>
-        <p>Adding "explain your reasoning" or "think through this step by step" tends to produce more accurate, more carefully considered answers on multi-step problems.</p>
+        <p>Adding "explain your reasoning" or "think through this step by step" tends to produce more accurate, more carefully considered answers on multi-step problems, math, logic, or anything with several moving parts. It seems like a small addition, but it noticeably reduces the rate of the model jumping to a plausible-sounding but wrong answer.</p>
 
         <h2>7. Break big tasks into smaller prompts</h2>
-        <p>Instead of one giant prompt asking for an entire report, ask for an outline first, review it, then ask for each section. You'll get more control and better quality per section.</p>
+        <p>Instead of one giant prompt asking for an entire report end to end, ask for an outline first, review it, adjust if needed, then ask for each section separately. You'll get more control over the direction and noticeably better quality per section than trying to get everything right in one massive request.</p>
 
         <h2>8. Tell it what to avoid, not just what to include</h2>
-        <p>"Don't use jargon" or "avoid generic advice" narrows the response in ways that positive instructions alone often miss.</p>
+        <p>"Don't use jargon" or "avoid generic advice" narrows the response in ways that positive instructions alone often miss entirely. It's easy to describe what you want and forget to mention what you specifically don't want, and that gap is exactly where a lot of generic-sounding output slips through.</p>
 
         <h2>9. Iterate rather than starting over</h2>
-        <p>If a response is close but not quite right, ask for a specific revision ("make the tone more casual") rather than rewriting your entire original prompt.</p>
+        <p>If a response is close but not quite right, ask for a specific, targeted revision, "make the tone more casual," "shorten the second paragraph," rather than rewriting your entire original prompt from scratch. This tends to get you to a good result faster and keeps the parts that were already working intact.</p>
 
         <h2>10. Tell it who the audience is</h2>
-        <p>"Explain this to a complete beginner" versus "explain this to a senior engineer" changes vocabulary, depth, and assumed background dramatically.</p>
+        <p>"Explain this to a complete beginner" versus "explain this to a senior engineer" changes vocabulary, depth, and assumed background dramatically, even for the exact same underlying question. Naming your audience is one sentence that saves you from getting an answer pitched at completely the wrong level.</p>
 
-        <p>Want a head start putting these into practice? <a href="../index.html#generator">Try the PromptNest generator</a> — pick Chat Prompt mode, describe your task, and it'll structure a role, task, and format for you automatically.</p>
+        <p>Want a head start putting these into practice? <a href="../index.html#generator">Try the PromptNest generator</a> in Chat Prompt mode, describe your task, and it structures a role, context, and format for you automatically.</p>
+
+        <div class="related-posts">
+          <h2>You might also like</h2>
+          <div class="example-grid">
+            <div class="example-card">
+              <h3><a href="chatgpt-prompts-for-bloggers.html">ChatGPT Prompt Ideas for Bloggers</a></h3>
+              <p>Practical ChatGPT prompts for outlines, headlines, intros, and editing help.</p>
+            </div>
+            <div class="example-card">
+              <h3><a href="prompt-engineering-for-beginners.html">Prompt Engineering for Beginners</a></h3>
+              <p>A simple, jargon-free explanation of prompt engineering and how to start using it.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

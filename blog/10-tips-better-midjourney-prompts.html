@@ -41,39 +41,60 @@
           </div>
         </div>
 
-        <p>A weak prompt gives Midjourney too little to work with, so it fills in the gaps with generic choices. A strong prompt removes that guesswork. Here are ten practical ways to get sharper, more intentional results.</p>
+        <p>I've generated a genuinely embarrassing number of Midjourney images at this point, most of them mediocre, some of them exactly what I wanted, a few of them better than what I could've described even if I'd tried harder. Here's what actually moved the needle, not the generic advice you see copy-pasted everywhere.</p>
 
-        <h2>1. Start with the subject, then build outward</h2>
-        <p>Lead with what the image is actually of, then layer on style, lighting, and composition — in that order. Midjourney tends to weight earlier words more heavily.</p>
+        <h2>1. Lead with the subject, not the mood</h2>
+        <p>It's tempting to open with atmosphere, "a moody, cinematic..." but Midjourney weighs earlier words more heavily. Start with what the image is actually of, then layer the mood and style on after.</p>
 
-        <h2>2. Name a specific art style, not a vague one</h2>
-        <p>"Digital art" is vague. "Ukiyo-e woodblock print" or "1980s airbrush illustration" gives the model something concrete to anchor to.</p>
+        <h2>2. Vague style words waste your prompt</h2>
+        <p>"Digital art" tells the model almost nothing, there are a million things that could mean. Naming something specific, like Ukiyo-e woodblock print or 1980s airbrush illustration, gives it an actual anchor to work from.</p>
 
-        <h2>3. Describe the lighting</h2>
-        <p>Lighting does more to set mood than almost anything else. Try phrases like golden hour lighting, dramatic chiaroscuro, or soft overcast light.</p>
+        <div class="callout-box">
+          <p class="callout-label">Try this instead of "digital art"</p>
+          <p>"a fox in a forest, ukiyo-e woodblock print style, muted indigo and rust palette"</p>
+        </div>
 
-        <h2>4. Specify the camera angle or composition</h2>
-        <p>Terms like low-angle shot, wide establishing shot, or close-up framing push the model toward a specific visual structure instead of a default centered pose.</p>
+        <h2>3. Lighting does more than people expect</h2>
+        <p>I underestimated this for way too long. Two identical prompts with just the lighting phrase swapped, golden hour lighting versus dramatic chiaroscuro, will come back looking like they're from different projects entirely.</p>
 
-        <h2>5. Use comma-separated phrases, not full sentences</h2>
-        <p>Midjourney responds better to a list of descriptive phrases separated by commas than to a grammatically complete sentence — it's parsing for concepts, not syntax.</p>
+        <h2>4. Say where the camera is</h2>
+        <p>Low-angle shot, wide establishing shot, close-up framing, these push the model toward an actual composition instead of defaulting to whatever centered pose it usually reaches for.</p>
 
-        <h2>6. Add a quality/detail modifier</h2>
-        <p>Phrases like highly detailed, sharp focus, or 8k resolution nudge the output toward more refined rendering.</p>
+        <h2>5. Commas beat sentences</h2>
+        <p>This one felt counterintuitive at first, but Midjourney parses a list of descriptive phrases better than a proper sentence. It's reading for concepts, not grammar.</p>
 
-        <h2>7. Reference a mood, not just a subject</h2>
-        <p>Words like eerie, serene, triumphant, or melancholic shape color grading and atmosphere even when nothing in the scene explicitly shows emotion.</p>
+        <blockquote class="pull-quote">Write it like a list of ingredients, not a story.</blockquote>
 
-        <h2>8. Keep contradictory ideas out of one prompt</h2>
-        <p>"Minimalist" and "highly detailed" pull in opposite directions. Pick a lane — you can always generate a second variation with the other approach.</p>
+        <h2>6. Add something for quality, but don't overdo it</h2>
+        <p>Highly detailed, sharp focus, that kind of phrase nudges toward more refined output. One or two is enough, stacking five of them doesn't multiply the effect, it just eats your prompt's attention.</p>
 
-        <h2>9. Iterate instead of aiming for a perfect first prompt</h2>
-        <p>Treat your first generation as a draft. Look at what came out, then adjust one or two elements rather than rewriting the whole prompt from scratch.</p>
+        <h2>7. Mood words matter even in non-people scenes</h2>
+        <p>Eerie, serene, triumphant, these shift color grading and atmosphere even in a landscape with nothing emotional happening in it. Worth testing on a scene you think doesn't need it.</p>
 
-        <h2>10. Save prompts that work</h2>
-        <p>When a combination of style + lighting + composition produces a result you like, keep a note of it — it'll usually transfer well to other subjects too.</p>
+        <h2>8. Don't fight yourself with contradictions</h2>
+        <p>"Minimalist" and "highly detailed" in the same prompt just confuses things. Pick one, generate, then try the other version separately if you want to compare.</p>
 
-        <p>Want a head start on structuring prompts like these? <a href="../index.html#generator">Try the PromptNest generator</a> — pick Image Prompt mode, describe your subject, and it'll build in composition, lighting, and detail phrasing automatically.</p>
+        <h2>9. Treat the first result as a draft, not a verdict</h2>
+        <p>A weak first output usually isn't the model failing, it's information. Change one or two things instead of starting from scratch, and you'll get there faster than you'd expect.</p>
+
+        <h2>10. Keep the combinations that work</h2>
+        <p>When a style, lighting, and composition combo clicks, write it down somewhere. It usually transfers well to a completely different subject too, which saves a lot of reinventing.</p>
+
+        <p>If you'd rather not build all this from scratch every time, <a href="../index.html#generator">the PromptNest generator</a> handles the composition, lighting, and detail phrasing for you in Image Prompt mode, you just describe the subject.</p>
+
+        <div class="related-posts">
+          <h2>You might also like</h2>
+          <div class="example-grid">
+            <div class="example-card">
+              <h3><a href="ai-art-prompts-different-styles.html">How to Write AI Art Prompts in Different Styles</a></h3>
+              <p>See how the same subject transforms across Anime, Photorealistic, and Watercolor styles.</p>
+            </div>
+            <div class="example-card">
+              <h3><a href="midjourney-vs-dalle-vs-stable-diffusion.html">Midjourney vs DALL-E vs Stable Diffusion</a></h3>
+              <p>A plain comparison of the three biggest AI image generators.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -86,6 +107,7 @@
         <a href="../terms.html">Terms of Use</a>
         <a href="../about.html">About</a>
         <a href="../contact.html">Contact</a>
+        <a href="../blog.html">Blog</a>
       </nav>
     </div>
   </footer>

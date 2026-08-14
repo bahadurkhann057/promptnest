@@ -598,3 +598,43 @@ img {
   margin: 28px 0;
   line-height: 1.4;
 }
+/* ===========================================================
+   Author byline (blog posts)
+=========================================================== */
+.author-byline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.author-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.author-name {
+  font-weight: 600;
+  color: var(--ink) !important;
+}
+
+.author-title {
+  color: var(--ink-soft);
+}

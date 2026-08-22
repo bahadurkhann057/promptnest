@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT vs Claude: Which One Should You Prompt Differently? — PromptNest</title>
+  <meta name="description" content="How prompting ChatGPT and Claude differs in practice, and what to adjust depending on which one you're using.">
+  <link rel="canonical" href="https://promptnest-rho.vercel.app/blog/chatgpt-vs-claude-prompting.html">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">🪺</span>
+        <span class="logo-text">PromptNest</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#generator">Generator</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap legal-content">
+        <p><a href="../blog.html">&larr; Back to Blog</a></p>
+        <h1>ChatGPT vs Claude: Which One Should You Prompt Differently?</h1>
+        <div class="author-byline">
+          <div class="author-avatar">P</div>
+          <div class="author-info">
+            <p class="author-name">PromptNest Team</p>
+            <p class="author-title">Published August 2026</p>
+          </div>
+        </div>
+
+        <p>I use both regularly, and for a while I was just copy-pasting the same prompt between them assuming a good prompt is a good prompt everywhere. It mostly is, the core techniques, role-setting, clear tasks, format instructions, work on both. But there are a few real differences worth knowing so you're not fighting either tool unnecessarily.</p>
+
+        <h2>Where they're basically the same</h2>
+        <p>Nearly everything covered in a general prompting guide applies to both equally, giving a role, separating context from task, specifying format and length, asking for step-by-step reasoning on complex problems. If you've learned to prompt one of them well, you already know most of what you need for the other. The differences that do exist are more about tendencies and tone than fundamentally different rules.</p>
+
+        <h2>Claude tends to want more explicit boundaries</h2>
+        <p>In my experience, Claude responds well to being told directly what NOT to do, not just what to do, maybe more so than ChatGPT does. If you want a shorter response and just say "keep it brief," Claude sometimes still elaborates more than expected, adding "do not add caveats or extra context beyond what's asked" tends to land more precisely.</p>
+
+        <div class="callout-box">
+          <p class="callout-label">Example</p>
+          <p>"Summarize this in 3 bullet points. Do not add an introduction or a closing summary, just the three points."</p>
+        </div>
+
+        <h2>ChatGPT can lean toward confident-sounding but generic answers</h2>
+        <p>ChatGPT is quick to produce a fluent, confident-sounding response, which is great for speed but occasionally means it fills gaps with plausible-sounding generic content rather than flagging uncertainty. Explicitly asking it to say when it's unsure, or to only use information you've actually provided rather than filling in assumptions, helps rein this in on tasks where accuracy really matters.</p>
+
+        <h2>Claude often handles long context and documents a bit differently</h2>
+        <p>When you're pasting in a long document or a lot of context, being explicit about which part of it you want addressed helps more with Claude, since it tends to engage carefully with everything you give it rather than skimming for the most relevant bit. If you only care about one section, say so directly instead of relying on it to guess your priority.</p>
+
+        <blockquote class="pull-quote">A good prompt travels well, but small adjustments still help.</blockquote>
+
+        <h2>Neither difference is dramatic enough to relearn everything</h2>
+        <p>None of this means you need two completely separate prompting styles, it's more like a light accent adjustment on the same underlying language. The core skills, being specific, giving structure, stating format and length, transfer almost entirely. These are refinements for when you're not getting quite the result you expected, not a reason to overhaul your approach from scratch depending on which tool you opened.</p>
+
+        <p>Want prompts built with solid structure from the start, regardless of which chat tool you're using? <a href="../index.html#generator">Try the PromptNest generator</a> in Chat Prompt mode, it builds in the role, task, and format fundamentals that work well across both.</p>
+
+        <div class="related-posts">
+          <h2>You might also like</h2>
+          <div class="example-grid">
+            <div class="example-card">
+              <h3><a href="10-tips-better-chatgpt-prompts.html">10 Tips for Writing Better ChatGPT Prompts</a></h3>
+              <p>Ten practical ways to get clearer, more useful answers out of ChatGPT.</p>
+            </div>
+            <div class="example-card">
+              <h3><a href="prompt-engineering-for-beginners.html">Prompt Engineering for Beginners</a></h3>
+              <p>A simple, jargon-free explanation of prompt engineering and how to start using it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year"></span> PromptNest. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Use</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

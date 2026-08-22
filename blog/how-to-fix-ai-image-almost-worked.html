@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Fix an AI Image That Almost Worked — PromptNest</title>
+  <meta name="description" content="What to do when an AI-generated image is almost right, practical fixes for common problems instead of starting over from scratch.">
+  <link rel="canonical" href="https://promptnest-rho.vercel.app/blog/how-to-fix-ai-image-almost-worked.html">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">🪺</span>
+        <span class="logo-text">PromptNest</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#generator">Generator</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap legal-content">
+        <p><a href="../blog.html">&larr; Back to Blog</a></p>
+        <h1>How to Fix an AI Image That Almost Worked</h1>
+        <div class="author-byline">
+          <div class="author-avatar">P</div>
+          <div class="author-info">
+            <p class="author-name">PromptNest Team</p>
+            <p class="author-title">Published August 2026</p>
+          </div>
+        </div>
+
+        <p>The most frustrating result isn't a completely wrong image, it's the one that's 90% there. The composition is right, the subject looks good, but something small is off, and the instinct is to rewrite the whole prompt from scratch and hope for better luck. That's usually the wrong move. Here's how I actually work through a near-miss instead of starting over.</p>
+
+        <h2>Figure out exactly what's wrong before touching the prompt</h2>
+        <p>This sounds obvious, but it's the step people skip. Look at the image and name the specific problem, is it the pose, the lighting, an extra limb, the wrong mood, a background that's fighting the subject. Vague dissatisfaction, "it's just not quite right," doesn't give you anything to actually fix. A specific diagnosis does.</p>
+
+        <h2>Change one thing at a time</h2>
+        <p>Once you know what's wrong, adjust just that element and regenerate, rather than rewriting the whole prompt. If the lighting is flat, add or swap the lighting phrase and leave everything else identical. This isolates what actually caused the improvement, which matters more than it sounds, because you'll want to reuse that fix on future prompts too.</p>
+
+        <div class="callout-box">
+          <p class="callout-label">Before and after, lighting only</p>
+          <p>Before: "a portrait of a woman reading a book" &rarr; After: "a portrait of a woman reading a book, soft window light, warm afternoon glow"</p>
+        </div>
+
+        <h2>Common problems and what usually fixes them</h2>
+        <p>Anatomy looking off, extra fingers, strange proportions, usually improves with a closer crop or a different pose description, wide shots and complex poses are where most models struggle most. A background that's competing with your subject often just needs a simplicity cue added, like clean background or blurred background, rather than trying to describe the background away entirely.</p>
+
+        <p>An image that looks flat or lifeless is almost always a lighting problem, add a specific lighting phrase rather than a vague "make it look better" instruction, which the model can't really act on. A mood that's off, too cheerful for what you wanted, too sterile, usually responds well to one added mood word, eerie, melancholic, triumphant, rather than restructuring the whole scene.</p>
+
+        <blockquote class="pull-quote">Diagnose first, then change one thing. Not the other way around.</blockquote>
+
+        <h2>Sometimes the fix is subtraction, not addition</h2>
+        <p>It's tempting to keep adding descriptive words to push an image closer to what you want, but overloaded prompts often produce muddier, less coherent results than shorter, more focused ones. If a prompt has grown long through several rounds of edits, try trimming it back to the core elements and see if the image actually improves rather than degrades.</p>
+
+        <h2>When to actually start over</h2>
+        <p>If the composition itself is fundamentally wrong, wrong angle, wrong framing entirely, tweaking details won't fix a broken foundation, and it's genuinely faster to rewrite the prompt's core structure than to keep patching around a composition that was never going to work. The skill is telling the difference between a fixable detail and a structural problem, which gets easier with practice.</p>
+
+        <p>Want a properly structured starting point so you're fixing less in the first place? <a href="../index.html#generator">Try the PromptNest generator</a>, it builds in composition, lighting, and detail phrasing automatically in Image Prompt mode.</p>
+
+        <div class="related-posts">
+          <h2>You might also like</h2>
+          <div class="example-grid">
+            <div class="example-card">
+              <h3><a href="common-ai-prompt-mistakes.html">Common Mistakes People Make When Writing AI Prompts</a></h3>
+              <p>The most common prompt mistakes for both image and chat AI tools, and how to fix each one.</p>
+            </div>
+            <div class="example-card">
+              <h3><a href="10-tips-better-midjourney-prompts.html">10 Tips for Writing Better Midjourney Prompts</a></h3>
+              <p>Ten practical ways to get sharper, more intentional results from Midjourney.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year"></span> PromptNest. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Use</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
